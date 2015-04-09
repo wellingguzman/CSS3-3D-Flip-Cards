@@ -26,14 +26,14 @@ Testing how to implement a CSS3 Card Flip Effect.
 	.flip-inverted-diagonal-left
 
 ###Flip Horizontal (Direction: Right)
-	<div class="card-wrapper flip-right">
-                <div class="card">
-                        <div class="front">
-                                <!-- FRONT SIDE -->
-                        </div>
-                        <div class="back">
-                                <!-- BACK SIDE -->
-                        </div>
-                </div>
-        </div>
+  <div class="card-wrapper flip-right">
+    <div class="card">
+      <div class="front">
+        <!-- FRONT SIDE -->
+      </div>
+      <div class="back">
+        <!-- BACK SIDE -->
+      </div>
+    </div>
+  </div>
 
