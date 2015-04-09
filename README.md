@@ -36,4 +36,3 @@ Testing how to implement a CSS3 Card Flip Effect.
       </div>
     </div>
   </div>
-
