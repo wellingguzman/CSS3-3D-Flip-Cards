@@ -3,7 +3,8 @@ Testing 3D CSS Card Flip Effect
 
 Testing how to implement a CSS3 Card Flip Effect.
 
-###HTML Format
+### HTML Format
+
 ```html
 <div class="card-wrapper {class_efect}">
   <div class="card">
@@ -17,7 +18,8 @@ Testing how to implement a CSS3 Card Flip Effect.
 </div>
 ```
 
-###Class Effects
+### Class Effects
+
 ```
 .flip-right
 .flip-left
@@ -29,7 +31,8 @@ Testing how to implement a CSS3 Card Flip Effect.
 .flip-inverted-diagonal-left
 ```
 
-###Flip Horizontal (Direction: Right)
+### Flip Horizontal (Direction: Right)
+
 ```html
 <div class="card-wrapper flip-right">
   <div class="card">
