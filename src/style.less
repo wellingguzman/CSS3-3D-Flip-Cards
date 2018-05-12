@@ -5,13 +5,7 @@
 //--------------------------------------------------
 .card-wrapper {
   display: inline-block;
-  margin: 10px 20px;
-  perspective: 1000;
-
-  &, .card {
-    width: 250px;
-    height: 250px;
-  }
+  perspective: 1000px;
 
   //--------------------------------------------------
   // CARD FLIP RIGHT
@@ -23,43 +17,19 @@
     transition-timing-function: ease-in-out;
     transform-style: preserve-3d;
 
-    h2 {
-      margin: 5px 0;
-      text-align: center;
-    }
-
     .front, .back {
       position: absolute;
-      padding: 2px 10px;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
 
       backface-visibility: hidden;
-      border-radius: 4px;
+      transform: rotateX(0deg);
     }
 
     .front {
-      color: #484848;
-      background-color: #FFF;
-      border: 1px solid #D9D9D9;
       z-index: 2;
-    }
-
-    img {
-      width: 228px;
-      height: 190px;
-    }
-
-    .back {
-      color: #F0E68C;
-      background: #3D3D3D;
-      border: 1px solid #282828;
-    }
-
-    h2 {
-      color: #8BD0EC;
     }
   }
 
@@ -102,7 +72,7 @@
   //--------------------------------------------------
   &.flip-up {
     .card {
-      transform-origin: 50% 100% 50%;
+      // transform-origin: 50% 100% 50%;
 
       .back {
         transform: rotateX(180deg);
@@ -121,7 +91,7 @@
   //--------------------------------------------------
   &.flip-down {
     .card {
-      transform-origin: 100% 50% 50%;
+      // transform-origin: 100% 50% 50%;
 
       .back {
         transform: rotateX(-180deg);
@@ -140,7 +110,7 @@
   //--------------------------------------------------
   &.flip-diagonal-right {
     .card {
-      transform-origin: 0% 50% 50%;
+      // transform-origin: 0% 50% 50%;
       .back {
         transform: rotate3d(1, 1, 0, 180deg);
       }
@@ -158,7 +128,7 @@
   //--------------------------------------------------
   &.flip-diagonal-left {
     .card {
-      transform-origin: 0% 50% 50%;
+      // transform-origin: 0% 50% 50%;
 
       .back {
         transform: rotate3d(1, 1, 0, -180deg);
@@ -177,7 +147,7 @@
   //--------------------------------------------------
   &.flip-inverted-diagonal-right {
     .card {
-      transform-origin: 0% 50% 50%;
+      // transform-origin: 0% 50% 50%;
 
       .back {
         transform: rotate3d(-1, 1, 0, 180deg);
@@ -196,7 +166,7 @@
   //--------------------------------------------------
   &.flip-inverted-diagonal-left {
     .card {
-      transform-origin: 0% 50% 50%;
+      // transform-origin: 0% 50% 50%;
 
       .back {
         transform: rotate3d(1, -1, 0, 180deg);
